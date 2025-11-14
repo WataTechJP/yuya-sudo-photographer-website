@@ -34,7 +34,7 @@ export function Header() {
             href="/"
             className="text-lg font-serif font-light tracking-wide hover:opacity-70 transition-opacity"
           >
-            Yuya Sudo
+            y u y a
           </Link>
 
           {/* Desktop Navigation */}

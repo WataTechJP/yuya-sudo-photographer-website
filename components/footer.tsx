@@ -22,7 +22,7 @@ export function Footer() {
             className="text-center md:text-left"
           >
             <p className="text-2xl font-serif font-light tracking-wide mb-2">
-              Yuya Sudo
+              y u y a
             </p>
             <p className="text-sm font-light text-muted-foreground">
               Professional Photographer

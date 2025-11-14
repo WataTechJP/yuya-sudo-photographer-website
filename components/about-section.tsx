@@ -24,7 +24,7 @@ export function AboutSection() {
           >
             <Image
               src="/professional-photographer-with-camera-portrait.jpg"
-              alt="Yuya Sudo"
+              alt="y u y a"
               fill
               className="object-cover"
             />
@@ -41,7 +41,7 @@ export function AboutSection() {
                 About Me
               </p>
               <h2 className="text-4xl md:text-5xl font-serif font-light tracking-tight mb-6">
-                Yuya Sudo
+                y u y a
               </h2>
             </div>
 
