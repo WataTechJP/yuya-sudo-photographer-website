@@ -9,6 +9,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Mail, Instagram, Phone } from "lucide-react";
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
+import Link from "next/link";
 
 export function ContactSection() {
   const [formData, setFormData] = useState({
@@ -93,10 +94,15 @@ export function ContactSection() {
                   transition={{ duration: 0.4, delay: 0.2 }}
                   className="flex items-center gap-3 text-foreground/80"
                 >
-                  <Mail className="h-5 w-5" />
-                  <span className="font-light">hello@yuyasudo.jp</span>
+                  <Link
+                    href="mailto:hello@yuyasudo.jp"
+                    className="flex items-center gap-3"
+                  >
+                    <Mail className="h-5 w-5" />
+                    <span className="font-light">hello@yuyasudo.jp</span>
+                  </Link>
                 </motion.div>
-                <motion.div
+                {/* <motion.div
                   initial={{ opacity: 0, x: -20 }}
                   animate={
                     isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -20 }
@@ -106,7 +112,7 @@ export function ContactSection() {
                 >
                   <Phone className="h-5 w-5" />
                   <span className="font-light">+81 90-1234-5678</span>
-                </motion.div>
+                </motion.div> */}
                 <motion.div
                   initial={{ opacity: 0, x: -20 }}
                   animate={
@@ -115,8 +121,15 @@ export function ContactSection() {
                   transition={{ duration: 0.4, delay: 0.4 }}
                   className="flex items-center gap-3 text-foreground/80"
                 >
-                  <Instagram className="h-5 w-5" />
-                  <span className="font-light">@yuph87nik</span>
+                  <Link
+                    href="https://www.instagram.com/yuph87nik"
+                    className="flex items-center gap-3"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <Instagram className="h-5 w-5" />
+                    <span className="font-light">@yuph87nik</span>
+                  </Link>
                 </motion.div>
               </div>
             </div>
