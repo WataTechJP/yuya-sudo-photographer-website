@@ -1,4 +1,4 @@
-# フォトグラファーポートフォリオサイト
+# yuya-sudo-photographer-website
 
 Next.js 16とTypeScriptで構築されたモダンなフォトグラファー向けポートフォリオウェブサイトです。
 
@@ -180,4 +180,4 @@ npm install
 ---
 
 何か質問がある場合は、お気軽にお問い合わせください！
-# yuya-sudo-photographer-website
+
