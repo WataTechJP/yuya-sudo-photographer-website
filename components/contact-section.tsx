@@ -95,11 +95,13 @@ export function ContactSection() {
                   className="flex items-center gap-3 text-foreground/80"
                 >
                   <Link
-                    href="mailto:hello@yuyasudo.jp"
+                    href="mailto:yuya.contact.photo@gmail.com"
                     className="flex items-center gap-3"
                   >
                     <Mail className="h-5 w-5" />
-                    <span className="font-light">hello@yuyasudo.jp</span>
+                    <span className="font-light">
+                      yuya.contact.photo@gmail.com
+                    </span>
                   </Link>
                 </motion.div>
                 {/* <motion.div
@@ -122,13 +124,13 @@ export function ContactSection() {
                   className="flex items-center gap-3 text-foreground/80"
                 >
                   <Link
-                    href="https://www.instagram.com/yuph87nik"
+                    href="https://www.instagram.com/yuuzaay"
                     className="flex items-center gap-3"
                     target="_blank"
                     rel="noreferrer"
                   >
                     <Instagram className="h-5 w-5" />
-                    <span className="font-light">@yuph87nik</span>
+                    <span className="font-light">@yuuzaay</span>
                   </Link>
                 </motion.div>
               </div>

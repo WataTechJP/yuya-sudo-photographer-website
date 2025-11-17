@@ -59,7 +59,7 @@ export function Footer() {
           transition={{ duration: 0.6, delay: 0.4 }}
           className="mt-8 pt-8 border-t border-border text-center text-sm font-light text-muted-foreground"
         >
-          <p>© 2025 Yuya Sudo Photography. All rights reserved.</p>
+          <p>© 2025 yuya Photography. All rights reserved.</p>
         </motion.div>
       </div>
     </footer>
