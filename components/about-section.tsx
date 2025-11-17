@@ -23,7 +23,7 @@ export function AboutSection() {
             className="relative aspect-3/4 bg-muted"
           >
             <Image
-              src="/professional-photographer-with-camera-portrait.jpg"
+              src="/portfolio/B28EE17E-5F83-42B7-8C95-625E3411F186.JPG"
               alt="y u y a"
               fill
               className="object-cover"
@@ -45,7 +45,7 @@ export function AboutSection() {
               </h2>
             </div>
 
-            <div className="space-y-4 text-foreground/80 leading-relaxed">
+            <div className="space-y-4 text-foreground/80 leading-relaxed text-sm">
               <p className="font-light">
                 東京を拠点に活動するフォトグラファーです。人々の自然な表情や、風景の美しい瞬間を捉えることを得意としています。
               </p>
