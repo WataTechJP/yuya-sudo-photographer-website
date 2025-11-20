@@ -23,7 +23,7 @@ export function AboutSection() {
             className="relative aspect-3/4 bg-muted"
           >
             <Image
-              src="/portfolio/B28EE17E-5F83-42B7-8C95-625E3411F186.JPG"
+              src="Resized-portfolio/B28EE17E-5F83-42B7-8C95-625E3411F186.jpg"
               alt="y u y a"
               fill
               className="object-cover"
@@ -45,7 +45,7 @@ export function AboutSection() {
               </h2>
             </div>
 
-            <div className="space-y-4 text-foreground/80 leading-relaxed text-sm">
+            {/* <div className="space-y-4 text-foreground/80 leading-relaxed text-sm">
               <p className="font-light">
                 東京を拠点に活動するフォトグラファーです。人々の自然な表情や、風景の美しい瞬間を捉えることを得意としています。
               </p>
@@ -55,20 +55,14 @@ export function AboutSection() {
               <p className="font-light">
                 カメラを通して、あなたの大切な瞬間を永遠に残すお手伝いをさせてください。
               </p>
-            </div>
+            </div> */}
 
             <div className="pt-6">
               <h3 className="text-sm font-light tracking-widest uppercase mb-4 text-muted-foreground">
                 Specialties
               </h3>
               <div className="flex flex-wrap gap-3">
-                {[
-                  "Portrait",
-                  "Wedding",
-                  "Landscape",
-                  "Commercial",
-                  "Editorial",
-                ].map((specialty, index) => (
+                {["Portrait"].map((specialty, index) => (
                   <motion.span
                     key={specialty}
                     initial={{ opacity: 0, scale: 0.8 }}
