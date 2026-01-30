@@ -303,6 +303,9 @@ const portfolioItems = [
   },
 ];
 
+// ファーストビューに表示される画像数（優先読み込み）
+const PRIORITY_COUNT = 14;
+
 function PortfolioItem({
   item,
   index,
@@ -327,10 +330,12 @@ function PortfolioItem({
       <Image
         src={item.image || "/placeholder.svg"}
         alt={item.title}
-        width={800}
-        height={1000}
-        loading="lazy"
-        // ★ 全部見えるように変更
+        width={400}
+        height={500}
+        sizes="(max-width: 640px) 50vw, (max-width: 768px) 33vw, (max-width: 1024px) 20vw, 14vw"
+        priority={index < PRIORITY_COUNT}
+        placeholder="blur"
+        blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAKAAoDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABgcI/8QAIhAAAQMEAQUBAAAAAAAAAAAAAQIDBAAFBhEHEhMhMUFR/8QAFQEBAQAAAAAAAAAAAAAAAAAAAwT/xAAZEQACAwEAAAAAAAAAAAAAAAABAgADESH/2gAMAwEAAhEDEEA/ANJ5Djlqu8VT0+3RZLqQdOPMJWoD6NgjdUTI+KMUdkOqNmhAknZDbfQPwdO9UulRsxsZJhkm4wf/2Q=="
         className="
           max-w-full max-h-full w-auto h-auto
           object-contain
